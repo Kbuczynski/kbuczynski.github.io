@@ -1,10 +1,12 @@
 {
-  "name": "gatsby-starter-default",
+  "name": "kbuczynski-portfolio",
   "private": true,
-  "description": "A simple starter to get up and developing quickly with Gatsby",
+  "description": "A simple my portfolio page.",
   "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "author": "Kbuczynski <kamil.buczynski00@interia.pl>",
   "dependencies": {
+    "@hot-loader/react-dom": "^17.0.1",
+    "aos": "^2.3.4",
     "gatsby": "^2.26.1",
     "gatsby-image": "^2.5.0",
     "gatsby-plugin-manifest": "^2.6.1",
@@ -16,7 +18,12 @@
     "prop-types": "^15.7.2",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
-    "react-helmet": "^6.1.0"
+    "react-helmet": "^6.1.0",
+    "react-redux": "^7.2.2",
+    "redux": "^4.0.5",
+    "smoothscroll-polyfill": "^0.4.4",
+    "styled-components": "^5.2.1",
+    "three": "^0.124.0"
   },
   "devDependencies": {
     "prettier": "2.2.1"
