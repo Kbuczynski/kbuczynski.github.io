@@ -1,4 +1,5 @@
 module.exports = {
+  pathPrefix: "/",
   siteMetadata: {
     title: `Kamil Buczyński portfolio`,
     description: `Hello, my name is Kamil Buczyński and I am a begginer front-end developer and UX/UI designer.`,
