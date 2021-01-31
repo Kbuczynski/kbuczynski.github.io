@@ -22,7 +22,7 @@ const BackToTop = () => {
   return (
     show && (
       <StyledBox onClick={handleScroll} isInteractive={true}>
-        <TypingText text={"🡡 back to top"} />
+        <TypingText text={"back to top"} />
       </StyledBox>
     )
   )

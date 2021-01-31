@@ -44,7 +44,7 @@ const About = () => {
           Kamil&nbsp;Buczyński
         </StyledName>{" "}
         and I am a beginner front-end developer and UX/UI designer. I focus on
-        creating beautiful and useful layouts and analyzing user behavior on the
+        creating beautiful, useful layouts and analyzing user behavior on the
         websites. This two things play a crucial role in the process of creating
         your brand.
       </StyledText>

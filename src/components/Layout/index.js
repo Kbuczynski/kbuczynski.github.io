@@ -13,7 +13,6 @@ import Cursor from "../Cursor"
 import { GlobalStyle, StyledMain } from "./style"
 import Cube from "../Cube"
 import BackToTop from "../BackToTop"
-import SpaceWrap from "../SpaceWarp"
 
 let AOS
 
@@ -33,7 +32,7 @@ const Layout = ({ children, isDarkMode }) => {
     const AOS = require("aos")
 
     AOS.init({
-      offset: 100,
+      offset: 300,
       duration: 200,
       easing: "ease-out-cubic",
       delay: 100,
@@ -55,7 +54,6 @@ const Layout = ({ children, isDarkMode }) => {
 
       <Cursor />
       <Cube />
-      {/* <SpaceWrap /> */}
       <BackToTop />
 
       <Header

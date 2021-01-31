@@ -1,7 +1,7 @@
 {
   "name": "kbuczynski-portfolio",
   "private": true,
-  "description": "A simple my portfolio page.",
+  "description": "My portfolio page.",
   "version": "0.1.0",
   "author": "Kbuczynski <kamil.buczynski00@interia.pl>",
   "dependencies": {

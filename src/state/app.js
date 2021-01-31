@@ -1,5 +1,5 @@
 const initialState = {
-  isDarkMode: true,
+  isDarkMode: false,
 }
 
 const TOGGLE_DARKMODE = "TOGGLE_DARKMODE"

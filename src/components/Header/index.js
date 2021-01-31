@@ -20,7 +20,7 @@ const Header = ({ siteTitle }) => {
       <Switch />
       <Heading title={siteTitle} isH1 />
       <button aria-label="Scroll down" onClick={handleScrollDown}>
-        <TypingText text={"Scroll to explore 🡓"} />
+        <TypingText text={"Scroll to explore"} />
       </button>
     </StyledHeader>
   )
