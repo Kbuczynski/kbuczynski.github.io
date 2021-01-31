@@ -1,2 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[8],{Cdlu:function(a,t,e){"use strict";e.r(t);var n=e("q1tI"),c=e.n(n),u=e("69d5"),i=e("Zttt"),l=e("wtQ5");t.default=function(){return c.a.createElement(i.a,null,c.a.createElement(l.a,{title:"Kuchnia na obcasach"}),c.a.createElement(u.a,{title:"Kuchnia na obcasach"}))}}}]);
-//# sourceMappingURL=component---src-pages-product-js-8ee15adda41d520fe544.js.map
