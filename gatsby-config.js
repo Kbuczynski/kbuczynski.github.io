@@ -32,9 +32,25 @@ module.exports = {
         background_color: `#ffffff`,
         theme_color: `#ffffff`,
         display: `minimal-ui`,
-        icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
+        icon: `src/images/logo.png`,
       },
     },
     "gatsby-plugin-offline",
+    "gatsby-plugin-styled-components",
+    {
+      resolve: "gatsby-plugin-react-svg",
+      options: {
+        rule: {
+          include: /images/,
+        },
+      },
+    },
+    {
+      resolve: `gatsby-plugin-google-fonts`,
+      options: {
+        fonts: [`Rubik`, `Bodoni Moda`, `400`],
+        display: "swap",
+      },
+    },
   ],
 }

@@ -20,9 +20,14 @@ const Cursor = () => {
 
     if (child === null) return
 
-    child.getAttribute("data-interactive")
-      ? setIsInteractive(true)
-      : setIsInteractive(false)
+    if (
+      child.getAttribute("data-interactive") ||
+      child.parentNode.tagName === "g" //svg exception
+    ) {
+      setIsInteractive(true)
+    } else {
+      setIsInteractive(false)
+    }
   }, [x, y, child])
 
   if (isMobile) return null

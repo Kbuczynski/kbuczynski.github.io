@@ -3,13 +3,13 @@ import PropTypes from "prop-types"
 
 import { StyledLink } from "./style"
 
-const Link = ({ address, title, row, col, isAos }) => {
+const Link = ({ address, title, row, col, isAos, isBlank }) => {
   return (
     <StyledLink
       rel="noopener"
       href={address}
       title={title}
-      target="_blank"
+      target={isBlank ? "_blank" : "_self"}
       data-aos={isAos && "fade-up"}
       row={row}
       col={col}
@@ -26,12 +26,14 @@ Link.propTypes = {
   row: PropTypes.number,
   col: PropTypes.number,
   isAos: PropTypes.bool,
+  isBlank: PropTypes.bool,
 }
 
 Link.defaultProps = {
   row: 0,
   col: 0,
   isAos: true,
+  isBlank: true,
 }
 
 export default Link

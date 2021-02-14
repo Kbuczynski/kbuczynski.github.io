@@ -1,65 +1,98 @@
 import React, { useEffect, useRef } from "react"
 import * as THREE from "three"
-import { connect } from "react-redux"
 
 import { StyledCube } from "./style"
 
-const Cube = ({ isDarkMode }) => {
+const Cube = () => {
   const cubeRef = useRef()
 
   useEffect(() => {
+    const { innerWidth, innerHeight } = window
+
     const scene = new THREE.Scene()
     const camera = new THREE.PerspectiveCamera(
       24,
-      window.innerWidth / window.innerHeight,
+      innerWidth / innerHeight,
       0.1,
       1000
     )
+    const renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true })
 
-    const renderer = new THREE.WebGLRenderer({ alpha: true })
-    renderer.setSize(window.innerWidth, window.innerHeight)
+    renderer.setSize(innerWidth, innerHeight)
     cubeRef.current.appendChild(renderer.domElement)
 
-    const colorMain = new THREE.Color(`#9e9e9e`)
-    const colorLight = new THREE.Color("#fff")
+    const colorMain = new THREE.Color(`#7d7d7d`)
+    const colorLight = new THREE.Color("#e0e0e0")
 
-    const cubeGeometry = new THREE.BoxGeometry(4, 5, 3)
-    const cubeMaterial = new THREE.MeshPhongMaterial({
-      color: colorMain,
-      shininess: 80,
-    })
-    const cube = new THREE.Mesh(cubeGeometry, cubeMaterial)
+    const createCube = (size = 2, color = colorMain) => {
+      const cubeGeometry = new THREE.BoxGeometry(size, size * 1.5, size)
+      const cubeMaterial = new THREE.MeshPhongMaterial({
+        color: color,
+        shininess: 80,
+      })
+      cubeGeometry.translate(size / 3, size / 2, size / 2)
 
-    const light = new THREE.PointLight(colorLight, 2)
-    const light2 = new THREE.PointLight(colorLight, 2)
+      return new THREE.Mesh(cubeGeometry, cubeMaterial)
+    }
+
+    const createPointLight = (intensity = 1.5, color = colorLight) =>
+      new THREE.PointLight(color, intensity)
+
+    const cube = createCube()
+    const cube2 = cube.clone()
+    const light = createPointLight()
+    const light2 = createPointLight()
 
     light.position.set(-40, -20, 20)
-    light2.position.set(40, 20, 10)
+    light2.position.set(40, 20, 20)
 
-    scene.add(light)
-    scene.add(light2)
-    scene.add(cube)
+    scene.add(light, light2, cube, cube2)
 
     camera.position.z = 20
 
-    const animate = () => {
-      requestAnimationFrame(animate)
+    const handleResize = () => {
+      const { innerWidth, innerHeight } = window
 
+      renderer.setSize(innerWidth, innerHeight)
+      camera.aspect = innerWidth / innerHeight
+      camera.updateProjectionMatrix()
+    }
+
+    const cubeMovement = (cube, maxX = 0, isRight = true) => {
       cube.rotation.x += 0.01
       cube.rotation.y -= 0.01
 
+      if (window.scrollY < window.innerHeight) {
+        if (isRight) {
+          if (cube.position.x > 0) cube.position.x -= 0.01
+        } else {
+          if (cube.position.x < 0) cube.position.x += 0.01
+        }
+      } else {
+        if (isRight) {
+          if (cube.position.x <= maxX) cube.position.x += 0.01
+        } else {
+          if (cube.position.x >= maxX) cube.position.x -= 0.01
+        }
+      }
+    }
+
+    const animate = () => {
+      cubeMovement(cube, 3)
+      cubeMovement(cube2, -3, false)
       renderer.render(scene, camera)
+      requestAnimationFrame(animate)
     }
 
     animate()
-  }, [isDarkMode])
+    window.addEventListener("resize", handleResize)
+
+    return () => {
+      window.removeEventListener("resize", handleResize)
+    }
+  }, [])
 
   return <StyledCube ref={cubeRef} />
 }
 
-export default connect(
-  state => ({
-    isDarkMode: state.app.isDarkMode,
-  }),
-  null
-)(Cube)
+export default Cube

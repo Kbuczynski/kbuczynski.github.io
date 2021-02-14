@@ -3,7 +3,7 @@ import styled from "styled-components"
 export const StyledCircle = styled.div.attrs(
   ({ cursorX, cursorY, isInteractive }) => ({
     style: {
-      transform: `translate(${cursorX - 25}px, ${cursorY - 25}px) scale(${
+      transform: `translate(${cursorX - 30}px, ${cursorY - 30}px) scale(${
         isInteractive ? "1.5" : "1"
       })`,
     },
@@ -22,7 +22,7 @@ export const StyledCircle = styled.div.attrs(
 
 export const StyledPointer = styled.div.attrs(({ cursorX, cursorY }) => ({
   style: {
-    transform: `translate(${cursorX + 5}px, ${cursorY + 5}px)`,
+    transform: `translate(${cursorX}px, ${cursorY}px)`,
   },
 }))`
   position: fixed;

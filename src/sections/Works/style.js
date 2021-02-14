@@ -34,11 +34,6 @@ export const StyledImageWrapper = styled.div`
 
 export const StyledBox = styled.div`
   ${({ theme }) => theme.media.onlyDesktop} {
-    &:hover > a {
-      text-shadow: none;
-      color: ${({ theme }) => theme.colors.text};
-    }
-
     &:hover > span {
       color: ${({ theme }) => theme.colors.background};
       text-shadow: -1px 0 ${({ theme }) => theme.colors.text},

@@ -1,5 +1,6 @@
 import PropTypes from "prop-types"
 import React from "react"
+import BackToHome from "../BackToHome"
 
 import Heading from "../Heading"
 import Switch from "../Switch"
@@ -17,6 +18,7 @@ const Header = ({ siteTitle }) => {
 
   return (
     <StyledHeader>
+      <BackToHome />
       <Switch />
       <Heading title={siteTitle} isH1 />
       <button aria-label="Scroll down" onClick={handleScrollDown}>

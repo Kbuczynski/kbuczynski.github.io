@@ -1,4 +1,4 @@
-import React, { useEffect } from "react"
+import React, { useEffect, useState } from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 import { ThemeProvider } from "styled-components"
@@ -13,10 +13,12 @@ import Cursor from "../Cursor"
 import { GlobalStyle, StyledMain } from "./style"
 import Cube from "../Cube"
 import BackToTop from "../BackToTop"
+import Loader from "../Loader"
 
 let AOS
 
 const Layout = ({ children, isDarkMode }) => {
+  const [isLoading, setIsLoading] = useState(true)
   const data = useStaticQuery(graphql`
     query SiteTitleQuery {
       site {
@@ -32,7 +34,7 @@ const Layout = ({ children, isDarkMode }) => {
     const AOS = require("aos")
 
     AOS.init({
-      offset: 300,
+      offset: 200,
       duration: 200,
       easing: "ease-out-cubic",
       delay: 100,
@@ -40,6 +42,14 @@ const Layout = ({ children, isDarkMode }) => {
     })
 
     smoothscroll.polyfill()
+
+    const loader = setTimeout(() => {
+      setIsLoading(false)
+    }, 1000)
+
+    return () => {
+      clearTimeout(loader)
+    }
   }, [])
 
   useEffect(() => {
@@ -52,7 +62,9 @@ const Layout = ({ children, isDarkMode }) => {
     <ThemeProvider theme={isDarkMode ? themeDark : themeLight}>
       <GlobalStyle />
 
-      <Cursor />
+      <Loader isLoading={isLoading} />
+
+      {!isLoading && <Cursor />}
       <Cube />
       <BackToTop />
 

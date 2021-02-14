@@ -21,7 +21,7 @@ export const StyledHeading = css`
   }
 
   ${({ theme }) => theme.media.small} {
-    font-size: 2.8rem;
+    font-size: 2.4rem;
   }
 `
 
