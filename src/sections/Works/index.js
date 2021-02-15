@@ -65,7 +65,7 @@ const Works = () => {
                 <StyledImageWrapper
                   onClick={() => isMobile && handleOpenLink(path)}
                 >
-                  <Image src={src} />
+                  <Image src={src.thumbnail} />
                 </StyledImageWrapper>
               )}
             </div>
