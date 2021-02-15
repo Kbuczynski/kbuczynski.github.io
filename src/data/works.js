@@ -10,7 +10,7 @@ const works = [
       full: "kuchnianaobcasach-fullpage.jpg",
     },
     description:
-      "Kuchnia na obcasach is an original culinary blog with recipes for every occasion. I was created visual project, coding layout, deploy website on a server and advise my client which domain name should buy. When the blog caught the attention of users I also added  Google ads and analitycs, which helping acquire new customers.",
+      "Kuchnia na obcasach is an original culinary blog with recipes for every occasion. I created visual project, coding layout, deploy website on a server and advise my client which domain name should buy. When the blog caught the attention of users I also added  Google ads and analitycs, which helping acquire new customers.",
     technologies: "React, SCSS (BEM), WordPress as Headless CMS",
   },
   {
@@ -24,7 +24,7 @@ const works = [
       full: "dziwnow4fun-fullpage.jpg",
     },
     description:
-      "Dziwnów4Fun is an landing page presenting mobie application, which will spice up your vacation at the Polish sea. This my first commercial project created in a team. I was responsible for coding the part of layout.",
+      "Dziwnów4Fun is an landing page presenting mobile application, which will spice up your vacation at Polish sea. This was my first commercial project created in a team. I was responsible for coding the part of layout.",
     technologies: "React, CSS, PHP",
   },
   {
@@ -52,7 +52,7 @@ const works = [
       full: "apartamentszczecin-fullpage.jpg",
     },
     description:
-      "GM Apartament Szczecin is an landing page presenting apartment for rent. I was created visual project, coding layout, deploy website on a server and connect Google analitycs.",
+      "GM Apartament Szczecin is an landing page presenting apartment for rent. I created visual project, coding layout, deploy website on a server and connect Google analitycs.",
     technologies: "React, SCSS (BEM), Figma",
   },
   {
@@ -66,7 +66,7 @@ const works = [
       full: "lokando-fullpage.jpg",
     },
     description:
-      "Lokando is a service created under 'Hackathon dla Miast', which is created to help local entrepreneurs in the plight caused by COVID-19.",
+      "Lokando is a service created under 'Hackathon dla Miast', which was established to help local entrepreneurs in the plight caused by COVID-19.",
     technologies: "React, SCSS (BEM), PHP Laravel, Figma",
   },
   {
@@ -80,7 +80,7 @@ const works = [
       full: "photosearchengine-fullpage.jpg",
     },
     description:
-      "Photo search engine is application to searching photos using Unsplash API.",
+      "Photo search engine is an application to searching photos using Unsplash API.",
     technologies: "React, SCSS (BEM)",
   },
   {
@@ -94,7 +94,7 @@ const works = [
       full: "grinchscode-fullpage.jpg",
     },
     description:
-      "Grinch's Code is a landing page Hackathon for beginner programmer, which I organized with friends.",
+      "Grinch's Code is a landing page Hackathon for beginner programmers, which I organized with friends.",
     technologies: "React, SCSS, Figma",
   },
   {
