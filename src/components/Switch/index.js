@@ -14,7 +14,7 @@ const Switch = ({ isDarkMode, dispatch }) => {
   }, [dispatch])
 
   return (
-    <StyledSwitch data-interactive={true}>
+    <StyledSwitch data-interactive={true} title="Toggle color mode">
       <StyledCheckbox type="checkbox" onChange={handleSwitch} />
       <StyledSlider isChecked={isDarkMode} data-interactive={true}>
         <StyledBall isChecked={isDarkMode} data-interactive={true} />

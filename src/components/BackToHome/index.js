@@ -9,7 +9,7 @@ const BackToHome = () => {
   }
 
   return (
-    <StyledWrapper onClick={handleLink}>
+    <StyledWrapper onClick={handleLink} title="Back to home page">
       <Logo />
     </StyledWrapper>
   )

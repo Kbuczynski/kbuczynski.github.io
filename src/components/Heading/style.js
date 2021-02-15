@@ -1,7 +1,7 @@
 import styled, { css, keyframes } from "styled-components"
 
 export const StyledHeading = css`
-  font-size: 10rem;
+  font-size: 9rem;
   text-transform: uppercase;
   font-weight: ${({ theme }) => theme.fonts.regular};
   color: ${({ theme }) => theme.colors.text};
@@ -13,7 +13,7 @@ export const StyledHeading = css`
   font-family: "Bodoni Moda", serif;
 
   ${({ theme }) => theme.media.large} {
-    font-size: 7rem;
+    font-size: 6rem;
   }
 
   ${({ theme }) => theme.media.medium} {

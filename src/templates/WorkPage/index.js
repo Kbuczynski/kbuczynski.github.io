@@ -33,7 +33,7 @@ const WorkPage = ({ pageContext }) => {
         <StyledText data-aos="fade-up">{work.description}</StyledText>
       </Section>
       <Section>
-        <Image src={work.src} />
+        <Image src={work.src.full} />
       </Section>
       <Section>
         <StyledText data-aos="fade-up">{work.technologies}</StyledText>
@@ -41,7 +41,10 @@ const WorkPage = ({ pageContext }) => {
       <Section>
         <StyledLinksBox>
           <Link address={work.address} title={"Live"} />
-          <Link address={work.repository} title={"Repository"} />
+
+          {work.repository !== "" && (
+            <Link address={work.repository} title={"Repository"} />
+          )}
         </StyledLinksBox>
       </Section>
     </Layout>
@@ -55,7 +58,7 @@ WorkPage.propTypes = {
     description: PropTypes.string,
     path: PropTypes.string,
     slug: PropTypes.string,
-    src: PropTypes.string,
+    src: PropTypes.object,
     technologies: PropTypes.string,
     title: PropTypes.string,
   }),

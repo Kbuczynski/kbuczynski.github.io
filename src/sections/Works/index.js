@@ -53,7 +53,7 @@ const Works = () => {
               <StyledBox
                 onMouseMove={handleShowImg}
                 onMouseLeave={handleHideImg}
-                data-image={src}
+                data-image={src.thumbnail}
               >
                 <Link address={path} title={title} isBlank={false} />
                 <StyledNumber data-aos="fade-up" data-interactive={true}>
