@@ -22,7 +22,7 @@ export const StyledLoaderBox = styled.div`
   width: 100%;
   height: 100%;
   background-color: ${({ theme }) => theme.colors.background};
-  position: absolute;
+  position: fixed;
   left: 0;
   top: 0;
   ${({ theme }) => theme.mixins.center}

@@ -42,10 +42,10 @@ const About = () => {
           onMouseLeave={() => setShowPhoto(false)}
         >
           Kamil&nbsp;Buczyński
-        </StyledName>{" "}
-        and I am a beginner front-end developer and UX/UI designer. I focus on
+        </StyledName>
+        . I am a beginner front-end developer and UX/UI designer. I focus on
         creating beautiful, useful layouts and analyzing user behavior on the
-        websites. This two things play a crucial role in the process of creating
+        websites. These two things play a crucial role in the process of creating
         your brand.
       </StyledText>
     </Section>

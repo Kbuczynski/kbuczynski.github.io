@@ -28,20 +28,6 @@ const works = [
     technologies: "React, CSS, PHP",
   },
   {
-    title: "Uwaga Dzik",
-    slug: "uwaga-dzik",
-    path: "/works/uwaga-dzik",
-    address: "https://www.youtube.com/watch?v=IpjO-MXOHNI",
-    repository: "https://github.com/Uwaga-Dzik",
-    src: {
-      thumbnail: "uwagadzik.png",
-      full: "uwagadzik.png",
-    },
-    description:
-      "Uwaga Dzik is a mobile application created under Hackathon 'HackYeah 2020', which was supposed to help foresters in eliminating the risks associated with wild boar-borne disease.",
-    technologies: "React Native, Styled Components, PHP (Laravel)",
-  },
-  {
     title: "GM Apartament Szczecin",
     slug: "gm-apartament-szczecin",
     path: "/works/gm-apartament-szczecin",
@@ -56,34 +42,6 @@ const works = [
     technologies: "React, SCSS (BEM), Figma",
   },
   {
-    title: "Lokando",
-    slug: "lokando",
-    path: "/works/lokando",
-    address: "http://dev.lokando.pl/",
-    repository: "https://github.com/Kbuczynski/Lokando",
-    src: {
-      thumbnail: "lokando.jpg",
-      full: "lokando-fullpage.jpg",
-    },
-    description:
-      "Lokando is a service created under 'Hackathon dla Miast', which was established to help local entrepreneurs in the plight caused by COVID-19.",
-    technologies: "React, SCSS (BEM), PHP Laravel, Figma",
-  },
-  {
-    title: "Photo search engine",
-    slug: "photo-search-engine",
-    path: "/works/photo-search-engine",
-    address: "https://kbuczynski.github.io/photo-search-app/",
-    repository: "https://github.com/Kbuczynski/photo-search-app",
-    src: {
-      thumbnail: "photosearchengine.png",
-      full: "photosearchengine-fullpage.jpg",
-    },
-    description:
-      "Photo search engine is an application to searching photos using Unsplash API.",
-    technologies: "React, SCSS (BEM)",
-  },
-  {
     title: "Grinch's Code",
     slug: "grinchs-code",
     path: "/works/grinchs-code",
@@ -94,22 +52,22 @@ const works = [
       full: "grinchscode-fullpage.jpg",
     },
     description:
-      "Grinch's Code is a landing page Hackathon for beginner programmers, which I organized with friends.",
+      "Grinch's Code is a landing page Hackathon for beginner programmers, which I organized with friends. I was created visual project, coding layout, deploy website on a server and connect Google analitycs.",
     technologies: "React, SCSS, Figma",
   },
   {
-    title: "LC pokoje & apartamenty",
-    slug: "lc-pokoje-i-apartamenty",
-    path: "/works/lc-pokoje-i-apartamenty",
-    address: "https://kbuczynski.github.io/lc-pokoje-i-apartamenty/dist/",
-    repository: "https://github.com/Kbuczynski/lc-pokoje-i-apartamenty",
+    title: "Uwaga Dzik",
+    slug: "uwaga-dzik",
+    path: "/works/uwaga-dzik",
+    address: "https://www.youtube.com/watch?v=IpjO-MXOHNI",
+    repository: "https://github.com/Uwaga-Dzik",
     src: {
-      thumbnail: "lcpokojeapartamenty.jpg",
-      full: "lcpokojeapartamenty-fullpage.jpg",
+      thumbnail: "uwagadzik.png",
+      full: "uwagadzik.png",
     },
     description:
-      "LC pokoje & apartamenty is a landing page for a seaside holiday resort.",
-    technologies: "HTML, SCSS (BEM), JavaScript",
+      "Uwaga Dzik is a mobile application created under Hackathon 'HackYeah 2020', which was supposed to help foresters in eliminating the risks associated with wild boar-borne disease. I was created visual project and coding layout.",
+    technologies: "React Native, Styled Components, PHP (Laravel)",
   },
 ]
 
