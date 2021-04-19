@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+Sitemap: https://kbuczynski.pl/sitemap.xml
+Host: https://kbuczynski.pl
