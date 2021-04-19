@@ -1,12 +1,21 @@
 import React, { useEffect } from "react"
 import { connect } from "react-redux"
 import PropTypes from "prop-types"
+import { trackCustomEvent } from "gatsby-plugin-google-analytics"
 
 import { toggleDarkMode } from "../../state/app"
 import { StyledBall, StyledCheckbox, StyledSlider, StyledSwitch } from "./style"
 
 const Switch = ({ isDarkMode, dispatch }) => {
-  const handleSwitch = () => dispatch(toggleDarkMode(!isDarkMode))
+  const handleSwitch = () => {
+    dispatch(toggleDarkMode(!isDarkMode))
+
+    trackCustomEvent({
+      category: "Toggle color",
+      action: "Switch",
+      label: "Toggle color"
+    })
+  }
 
   useEffect(() => {
     localStorage.getItem("isDarkMode") &&

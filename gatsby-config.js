@@ -4,8 +4,15 @@ module.exports = {
     title: `Kamil Buczyński portfolio`,
     description: `Hello, my name is Kamil Buczyński and I am a begginer front-end developer and UX/UI designer.`,
     author: `@kbuczynski`,
+    siteUrl: `https://kbuczynski.pl/`,
   },
   plugins: [
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: "UA-151457371-3",
+      },
+    },
     `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-source-filesystem`,
@@ -23,6 +30,8 @@ module.exports = {
         defaultQuality: 75,
       },
     },
+    `gatsby-plugin-sitemap`,
+    'gatsby-plugin-robots-txt',
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
