@@ -1,5 +1,19 @@
 const works = [
   {
+    title: "Secfense",
+    slug: "secfense",
+    path: "/works/secfense",
+    address: "https://secfense.com/",
+    repository: "",
+    src: {
+      thumbnail: "secfense.jpg",
+      full: "secfense-fullpage.jpg",
+    },
+    description: 
+      "Secfense is a page for client from the cybersecurity industry. I was responsible for improve SEO using the received audit, update content on the page and improvement a part of layout.",
+    technologies: "HTML, CSS, JS, GULP",
+  },
+  {
     title: "Kuchnia na obcasach",
     slug: "kuchnia-na-obcasach",
     path: "/works/kuchnia-na-obcasach",
