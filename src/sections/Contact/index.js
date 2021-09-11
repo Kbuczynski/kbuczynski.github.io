@@ -37,6 +37,7 @@ const links = [
 const Contact = () => {
   return (
     <Section>
+      <div id={'contact'}/>
       <Heading title="003/ contact" />
       <StyledContainer>
         <StyledTable>

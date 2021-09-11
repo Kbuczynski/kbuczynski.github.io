@@ -5,6 +5,10 @@ export const GlobalStyle = createGlobalStyle`
     color: ${({ theme }) => theme.colors.background};
     background: ${({ theme }) => theme.colors.text};
   }
+  
+  html {
+    scroll-behavior: smooth;
+  }
 
   body {
     padding: 0;

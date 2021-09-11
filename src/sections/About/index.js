@@ -5,6 +5,7 @@ import ImageMe from "../../components/ImageMe"
 import Section from "../../components/Section"
 import { useDeviceDetec } from "../../hooks/useDeviceDetect"
 import { StyledName, StyledPhoto, StyledText } from "./style"
+import Link from "../../components/Link"
 
 const About = () => {
   const [showPhoto, setShowPhoto] = useState(false)
@@ -43,10 +44,10 @@ const About = () => {
         >
           Kamil&nbsp;Buczyński
         </StyledName>
-        . I am a beginner front-end developer and UX/UI designer. I focus on
+        . I am a beginner software engineer and UX/UI designer. I focus on
         creating beautiful, useful layouts and analyzing user behaviour on the
         websites. These two things play a crucial role in the process of creating
-        your brand.
+        your brand. If you're interested in my services, feel free to <Link address={'#contact'} title={'contact me'} isBlank={false}/>.
       </StyledText>
     </Section>
   )
