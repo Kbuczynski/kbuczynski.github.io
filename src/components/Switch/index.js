@@ -13,7 +13,7 @@ const Switch = ({ isDarkMode, dispatch }) => {
     trackCustomEvent({
       category: "Toggle color",
       action: "Switch",
-      label: "Toggle color"
+      label: "Toggle color",
     })
   }
 

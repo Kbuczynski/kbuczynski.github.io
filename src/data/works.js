@@ -9,7 +9,7 @@ const works = [
       thumbnail: "secfense.jpg",
       full: "secfense-fullpage.jpg",
     },
-    description: 
+    description:
       "Secfense is a page for client from the cybersecurity industry. I was responsible for improve SEO using the received audit, update content on the page and improvement a part of layout.",
     technologies: "HTML, CSS, JS, GULP",
   },

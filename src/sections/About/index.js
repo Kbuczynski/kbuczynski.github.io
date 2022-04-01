@@ -46,8 +46,15 @@ const About = () => {
         </StyledName>
         . I am a beginner software engineer and UX/UI designer. I focus on
         creating beautiful, useful layouts and analyzing user behaviour on the
-        websites. These two things play a crucial role in the process of creating
-        your brand. If you're interested in my services, feel free to <Link address={'#contact'} title={'contact me'} isBlank={false} isAos={false}/>.
+        websites. These two things play a crucial role in the process of
+        creating your brand. If you're interested in my services, feel free to{" "}
+        <Link
+          address={"#contact"}
+          title={"contact me"}
+          isBlank={false}
+          isAos={false}
+        />
+        .
       </StyledText>
     </Section>
   )

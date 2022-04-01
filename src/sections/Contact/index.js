@@ -21,10 +21,6 @@ const links = [
     title: "LinkedIn",
   },
   {
-    address: "https://www.facebook.com/kamil.buczynski.00",
-    title: "Facebook",
-  },
-  {
     address: CV,
     title: "Download as PDF",
   },
@@ -37,7 +33,7 @@ const links = [
 const Contact = () => {
   return (
     <Section>
-      <div id={'contact'}/>
+      <div id={"contact"} />
       <Heading title="003/ contact" />
       <StyledContainer>
         <StyledTable>
