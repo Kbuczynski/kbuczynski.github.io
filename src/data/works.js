@@ -24,7 +24,7 @@ const works = [
       full: "kuchnianaobcasach-fullpage.jpg",
     },
     description:
-      "Kuchnia na obcasach is an original culinary blog with recipes for every occasion. I created visual project, coding layout, deploed website on a server and advise my client which domain name he should buy. When the blog caught the attention of users I also added Google ads and analitycs, which helps acquire new customers.",
+      "Kuchnia na obcasach is an original culinary blog with recipes for every occasion. I created visual project, coding layout and deployed website on a server. When the blog caught the attention of users I also added Google ads and analytics, which helps acquire new customers.",
     technologies: "React, SCSS (BEM), WordPress as Headless CMS",
   },
   {
@@ -38,7 +38,7 @@ const works = [
       full: "apartamentszczecin-fullpage.jpg",
     },
     description:
-      "GM Apartament Szczecin is an landing page presenting apartment for rent. I created visual project, coding layout, deploed website on a server and connected Google analitycs.",
+      "GM Apartament Szczecin is an landing page presenting apartment for rent. I created visual project, coding layout, deployed website on a server and connected Google analytics.",
     technologies: "React, SCSS (BEM), Figma",
   },
   {
@@ -66,7 +66,7 @@ const works = [
       full: "uwagadzik.png",
     },
     description:
-      "Uwaga Dzik is a mobile application created under Hackathon 'HackYeah 2020', which was supposed to help foresters in eliminating the risks associated with wild boar-borne disease. I created visual project and coding layout.",
+      "Uwaga Dzik is a mobile application created under Hackathon 'HackYeah 2020', which was supposed to help foresters in eliminating the risks associated with wild boar-borne disease. In four person team we created design, mobile application and backend. I was responsible for coding the part of app.",
     technologies: "React Native, Styled Components, PHP (Laravel)",
   },
   {
@@ -80,7 +80,7 @@ const works = [
       full: "grinchscode-fullpage.jpg",
     },
     description:
-      "Grinch's Code is a landing page for Hackathon beginner programmers, which I organized with friends. I created visual project, coding layout, deploed website on a server and connected Google analitycs.",
+      "Grinch's Code is a landing page for Hackathon beginner programmers, which I organized with friends. I created visual project, coding layout, deployed website on a server and connected Google analytics.",
     technologies: "React, SCSS, Figma",
   },
 ]

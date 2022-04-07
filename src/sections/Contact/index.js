@@ -50,13 +50,13 @@ const Contact = () => {
                     row={index + 1}
                     col={2}
                   />
-                  {index === 3 && (
-                    <StyledText row={5} col={1} data-aos="fade-up">
+                  {index === 2 && (
+                    <StyledText row={4} col={1} data-aos="fade-up">
                       CV
                     </StyledText>
                   )}
-                  {index === 4 && (
-                    <StyledText row={6} col={1} data-aos="fade-up">
+                  {index === 3 && (
+                    <StyledText row={5} col={1} data-aos="fade-up">
                       E-mail
                     </StyledText>
                   )}
