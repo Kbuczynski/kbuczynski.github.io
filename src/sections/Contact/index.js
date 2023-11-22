@@ -13,10 +13,6 @@ const links = [
     title: "Github",
   },
   {
-    address: "https://dribbble.com/Kbuczynski",
-    title: "Dribbble",
-  },
-  {
     address: "https://www.linkedin.com/in/kbuczynski/",
     title: "LinkedIn",
   },
@@ -50,13 +46,13 @@ const Contact = () => {
                     row={index + 1}
                     col={2}
                   />
-                  {index === 2 && (
-                    <StyledText row={4} col={1} data-aos="fade-up">
+                  {index === 1 && (
+                    <StyledText row={3} col={1} data-aos="fade-up">
                       CV
                     </StyledText>
                   )}
-                  {index === 3 && (
-                    <StyledText row={5} col={1} data-aos="fade-up">
+                  {index === 2 && (
+                    <StyledText row={4} col={1} data-aos="fade-up">
                       E-mail
                     </StyledText>
                   )}

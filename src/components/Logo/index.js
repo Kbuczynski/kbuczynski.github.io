@@ -56,7 +56,7 @@ const Logo = ({ isDarkMode }) => {
       onMouseEnter={handleHover}
       data-interactive={true}
     >
-      <Icon data-interactive={true} style={{ width: `${isMobile && "80%"}` }} />
+      <Icon data-interactive={true} />
     </StyledLogoWrapper>
   )
 }

@@ -46,7 +46,7 @@ export const GlobalStyle = createGlobalStyle`
 `
 
 export const StyledMain = styled.main`
-  padding: 0 10vw 0 10vw;
+  padding: 0 10vw;
 
   ${({ theme }) => theme.media.medium} {
     padding: 0 1vw;

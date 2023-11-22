@@ -1,4 +1,4 @@
-import React, { useState } from "react"
+import React, { useMemo, useState } from "react"
 
 import Heading from "../../components/Heading"
 import ImageMe from "../../components/ImageMe"
@@ -12,6 +12,7 @@ const About = () => {
   const [photoX, setPhotoX] = useState(0)
   const [photoY, setPhotoY] = useState(0)
   const { isMobile } = useDeviceDetec()
+  const yearsOfWork = useMemo(() => new Date().getFullYear() - 2021, [])
 
   const handlePhoto = e => {
     if (isMobile) return
@@ -44,9 +45,11 @@ const About = () => {
         >
           Kamil&nbsp;Buczyński
         </StyledName>
-        . I am a software engineer specializes in creating websites and web applications. I focus on
-        creating beautiful, useful layouts and building solid and safety architecture. These two things play a crucial role in the process of
-        creating your brand. If you're interested in my services, feel free to{" "}
+        . I’m a full-stack developer from Poland with over {yearsOfWork} years
+        of commercial experience in creating websites, web, and mobile
+        applications. Currently, I'm working as Software Engineer and studying
+        Computer Science. Also, I was an organizer and mentor at Hackathons. If
+        you're interested in my services, feel free to{" "}
         <Link
           address={"#contact"}
           title={"contact me"}
